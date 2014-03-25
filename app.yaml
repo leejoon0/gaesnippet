@@ -2,6 +2,7 @@ application: snippetapptodo
 version: 1
 runtime: python
 api_version: 1
+threadsafe : true
 
 handlers:
 - url: /_ah/mail/snippets@.*snippetapptodo\.appspotmail\.com 

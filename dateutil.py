@@ -13,7 +13,7 @@ class Eastern_tzinfo(datetime.tzinfo):
         return dt + datetime.timedelta(days=(6-dt.weekday()))
 
     def dst(self, dt):
-        """ 한국은 섬머타임 없으므로 계산 생략 (dst=daylight saving time)
+        """  (dst=daylight saving time)
         # 2 am on the second Sunday in March
         dst_start = self._FirstSunday(datetime.datetime(dt.year, 3, 8, 2))
         # 1 am on the first Sunday in November

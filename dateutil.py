@@ -6,7 +6,7 @@ class Eastern_tzinfo(datetime.tzinfo):
     Adapted from http://code.google.com/appengine/docs/python/datastore/typesandpropertyclasses.html
     """
     def utcoffset(self, dt):
-        return datetime.timedelta(hours=-5) + self.dst(dt)
+        return datetime.timedelta(hours=+9) + self.dst(dt)
 
     def _FirstSunday(self, dt):
         """First Sunday on or after dt."""
